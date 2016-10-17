@@ -1,2 +1,1 @@
-# HTML_Session_8Assignment_3
-HTML_Session_8Assignment_3
+Hide all the input elements within a form
