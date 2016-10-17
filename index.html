@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hide all the input elements within a form</title>
+	<!-- Include Javascript File in a Script Tag -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#show").click(function(){
+			$("input[type='text'], input[type='submit']").show(); // Show input elements on click this button
+		});
+
+		$("#hide").click(function(){
+			$("input[type='text'], input[type='submit']").hide(); // Hide input elements on click this button
+		});
+	});
+	</script>
+</head> 
+<body>
+	<h1>Hide all the input elements within a form</h1>
+	<button id="show">SHOW</button>
+	<button id="hide">HIDE</button><br><br>
+		<form name="demo_form">
+		First name: <input type="text" name="fname"><br><br>
+		Last name: <input type="text" name="lname"><br><br>
+		<input type="submit" value="Submit">
+		</form> 
+</body>
+</html>
